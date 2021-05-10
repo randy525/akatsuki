@@ -1,0 +1,605 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 15%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-link {
+  color: red;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: rgb(110, 0, 0);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.contacts {
+  display: flex;
+  padding-top: 12px;
+}
+
+.contacts .material-icons {
+  font-size: 20px;
+  color: red;
+  margin-right: 10px;
+}
+
+.contacts a {
+  color: red;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contacts a:hover {
+  color: rgb(110, 0, 0);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.contacts-info {
+  font-size: 12px;
+  color: #db8484;
+}
+
+.login-buttons {
+  display: flex;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+  transition: 0.3s;
+  margin-right: 30px;
+}
+
+.login .material-icons  {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.login:hover {
+  color: rgb(110, 0, 0);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.login:hover .material-icons {
+  text-decoration: none;
+}
+
+.sign-up {
+  display: block;
+  text-align: center;
+  background-color: rgb(255, 95, 95);
+  text-decoration: none;
+  color: #fff;
+  width: 150px;
+  padding: 12px 0;
+  transition: 0.3s;
+}
+
+.sign-up:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+.mainbar {
+  background-image: url(./akatsuki.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.mainbar::after {
+  display: block;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainbar-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  width: 50%;
+}
+
+.mainbar-info h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+}
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  margin-top: 7vh;
+}
+
+.button-go {
+  background-color: #fff;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.work-title {
+  margin-bottom: 5px;
+}
+
+.sign-up-button {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: none;
+  color: red;
+  width: 40%;
+  padding: 12px 0;
+  transition: 0.3s;
+  margin-top: 7vh;
+}
+
+.sign-up-button:hover {
+  color:rgb(110, 0, 0);
+  background-color: rgb(190, 190, 190);
+  transition: 0.3;
+}
+
+.advantages {
+  background-color: #fff;
+  padding: 30px;
+  padding-left: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  z-index: 1;
+  right: 0;
+  bottom: -140px;
+}
+
+.achives {
+  background-color: #f1f1f1;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+.signaturka {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  width: 30%;
+  margin-bottom: 5vh;
+}
+
+.projects-title {
+  font-size: 16px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project {
+  width: 24%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.6);
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-info {
+  padding: 30px 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.project-name {
+  margin-bottom: 3vh;
+}
+
+.project-more {
+  text-decoration: none;
+  color:rgb(255, 157, 157);
+  position: absolute;
+  bottom: 20px;
+  transition: 0.3s;
+}
+
+.project-more:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.future {
+  margin-top: 7vh;
+  display: flex;
+}
+
+.future-title {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.future-project {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.future-project .material-icons {
+  display: block;
+  color: red;
+  margin-right: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 157, 157);
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+.ready {
+  display: flex;
+  align-items: center;
+}
+
+.start-button {
+  margin-left: 30px;
+  display: block;
+  text-align: center;
+  background-color: rgb(255, 95, 95);
+  text-decoration: none;
+  color: #fff;
+  width: 150px;
+  padding: 12px 0;
+  transition: 0.3s;
+}
+
+.start-button:hover {
+  background-color: red;
+  transition: 0.3s;
+}
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  display: none;
+}
+
+.menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.burger-line {
+  width: 70%;
+  margin: 0 auto;
+  height: 3px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.burger-line:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+  .nav-link {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .contacts {
+    padding-top: 0;
+  }
+
+  .contacts .material-icons {
+    font-size: 16px;
+  }
+
+  .num a {
+    font-size: 14px;
+  }
+
+  .contacts-info {
+    display: none;
+  }
+  
+  .container {
+    width: 70%;
+  }
+
+  .project-info {
+    padding: 20px 20px;
+    padding-bottom: 30px;
+  }
+
+  .mainbar {
+    height: 85vh;
+  }
+
+  .mainbar-info {
+    height: 85vh;
+  }
+
+  
+
+  .signaturka {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+    padding: 0;
+    transform: translateX(-200px);
+    transition: 0.5s ease-in-out;
+  }
+
+  .nav-link {
+    padding: 10px 30px 10px 30px;
+    margin: 0;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(50, 50, 50, 0.3);
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-shown {
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+  }
+
+  .advantages p:last-child {
+    display: none;
+  }
+
+  .advantages {
+    bottom: -100px;
+  }
+
+  .contacts .material-icons {
+    font-size: 18px;
+  }
+
+  .num a {
+    font-size: 16px;
+  }
+
+  .mainbar {
+    background-size: 130%;
+  }
+
+  .future {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .future-title {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+
+  .future-project {
+    width: 50%;
+    margin-bottom: 3vh;
+  }
+
+  .sign-up-button {
+    width: 70%;
+  }
+
+  .logo {
+    width: 20%;
+  }
+}
+
+@media (max-width: 960px) {
+  .mainbar-info {
+    width: 100%;
+  }
+
+  .sign-up-button {
+    width: 40%;
+    align-self: center;
+  }
+
+  .projects {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 48%;
+    margin-bottom: 5vh;
+  }
+
+  .future-title {
+    width: 70%;
+  }
+
+  .future-project {
+    width: 70%;
+  }
+
+  .advantages {
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    bottom: -90px;
+  }
+
+  .mainbar-info, .mainbar {
+    height: 70vh;
+  }
+
+  .signaturka {
+    font-size: 26px;
+  }
+
+  .mainbar-info h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 720px) {
+  .advantages {
+    display: none;
+  }
+
+  .signaturka {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts .material-icons {
+    display: none;
+  }
+
+  .login .material-icons {
+    display: none;
+  }
+
+  .header {
+    font-size: 14px;
+  }
+
+  .contacts .num a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 584px) {
+  .container {
+    width: 90%;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .mainbar-info, .mainbar {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 496px) {
+  .mainbar {
+    background-size: 140%;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .future-project {
+    width: 90%;
+  }
+
+  .future-title {
+    width: 90%;
+  }
+}
+
